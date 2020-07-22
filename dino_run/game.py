@@ -16,7 +16,7 @@ flySpeed = 20
 
 class ground:
     def __init__(self, screen, x):
-        self.groundPath = "dino run\\imgs\\ground.png"
+        self.groundPath = "dino_run\\imgs\\ground.png"
         self.groundFile = pygame.image.load(self.groundPath)
         self.x = x
         self.imgwidth = self.groundFile.get_width()
@@ -32,7 +32,7 @@ class ground:
 
 class cload:
     def __init__(self, screen):
-        self.cloadPath = "dino run\\imgs\\cload.png"
+        self.cloadPath = "dino_run\\imgs\\cload.png"
         self.cloadFile = pygame.image.load(self.cloadPath)
         self.imgwidth = self.cloadFile.get_width()
         self.y = random.randint(0, 7) * screen_y / 10
@@ -48,11 +48,11 @@ class cload:
 
 class rex:
     def __init__(self):
-        self.rexWalk1path = "dino run\\imgs\\rexWalk1.png"
-        self.rexWalk2path = "dino run\\imgs\\rexWalk2.png"
-        self.rexJumppath = "dino run\\imgs\\rexJump.png"
-        self.rexHide1path = "dino run\\imgs\\rexHide1.png"
-        self.rexHide2path = "dino run\\imgs\\rexHide2.png"
+        self.rexWalk1path = "dino_run\\imgs\\rexWalk1.png"
+        self.rexWalk2path = "dino_run\\imgs\\rexWalk2.png"
+        self.rexJumppath = "dino_run\\imgs\\rexJump.png"
+        self.rexHide1path = "dino_run\\imgs\\rexHide1.png"
+        self.rexHide2path = "dino_run\\imgs\\rexHide2.png"
         self.rexFile = pygame.image.load(self.rexWalk1path)
         self.x = int(screen_x / 10)
         self.y = screen_y - self.rexFile.get_height()
@@ -107,9 +107,9 @@ class rex:
 
 class cactus:
     def __init__(self, screen):
-        self.cactusBigpath1 = "dino run\\imgs\\cacyusBig1.png"
-        self.cactusBigpath2 = "dino run\\imgs\\cacyusBig2.png"
-        self.cactusSmallpath = "dino run\\imgs\\cacyusSmall.png"
+        self.cactusBigpath1 = "dino_run\\imgs\\cacyusBig1.png"
+        self.cactusBigpath2 = "dino_run\\imgs\\cacyusBig2.png"
+        self.cactusSmallpath = "dino_run\\imgs\\cacyusSmall.png"
         index = random.randint(0, 2)
         if index == 0:
             self.cactusFile = pygame.image.load(self.cactusBigpath1)
@@ -130,8 +130,8 @@ class cactus:
 
 class fly:
     def __init__(self, screen):
-        self.fly1Path = "dino run\\imgs\\fly1.png"
-        self.fly2Path = "dino run\\imgs\\fly2.png"
+        self.fly1Path = "dino_run\\imgs\\fly1.png"
+        self.fly2Path = "dino_run\\imgs\\fly2.png"
         self.flyFile = pygame.image.load(self.fly1Path)
         self.index = 0
         self.x = screen_x
@@ -249,9 +249,9 @@ def isDead():
     pygame.display.update()
     global screen
     screen.fill(WHITE)
-    gameoverPath = "dino run\\imgs\\dead.png"
-    gameRestartPath = "dino run\\imgs\\restart.png"
-    gameRexPath = "dino run\\imgs\\rex.png"
+    gameoverPath = "dino_run\\imgs\\dead.png"
+    gameRestartPath = "dino_run\\imgs\\restart.png"
+    gameRexPath = "dino_run\\imgs\\rex.png"
     gameoverFile = pygame.image.load(gameoverPath)
     gameRestart = pygame.image.load(gameRestartPath)
     gameLogo = pygame.image.load(gameRexPath)
